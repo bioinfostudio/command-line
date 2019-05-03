@@ -62,6 +62,15 @@ groups:
     shuffle: False
     pages:
 
+    -
+        type: TerminalQuestion
+        id: shell
+        prompt: |
+
+            # Welcome to the test terminal for SHELL!
+
+            Don't be scared.
+
     # Pages can be given in-line (like this one) or brought in by including
     # them from other files, as below.
     -
