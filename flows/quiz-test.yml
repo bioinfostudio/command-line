@@ -64,6 +64,7 @@ groups:
     -
         type: TerminalQuestion
         id: shell
+        value: 5
         prompt: |
 
             # Welcome to the test terminal for SHELL!
