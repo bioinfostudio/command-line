@@ -1,5 +1,6 @@
 type: TerminalQuestion
 id: cd
+cid: mkdir
 value: 5
 prompt: |
 
@@ -9,7 +10,7 @@ prompt: |
     
     ```bash
     cd learning_unix
-    learner@:~/learning_unix$
+    ~/learning_unix$
     ```
     
     Notice that on this system the command prompt has expanded to include our current directory. This doesn't happen by default on all Unix systems, and you can configure what information appears as part of the command prompt (though we won't cover that here).
@@ -17,20 +18,20 @@ prompt: |
     Let's make two new subdirectories and navigate into them:
     
     ```bash
-    learner@:learning_unix$ mkdir outer
-    learner@:learning_unix$ cd outer
-    learner@:outer$
+    learning_unix$ mkdir outer
+    learning_unix$ cd outer
+    outer$
     
-    learner@:outer$ mkdir inner
-    learner@:outer$ cd inner/
-    learner@:inner$
+    outer$ mkdir inner
+    outer$ cd inner/
+    inner$
     ```
     
     Remember that you can always find out where you are using `pwd`:
     
     ```bash
-    learner@:inner$ pwd
-    /home/learner/learning_unix/outer/inner
+    inner$ pwd
+    /home/bioinfo/learning_unix/outer/inner
     ```
     
     We created the two directories in separate steps, but it is possible to use the `mkdir` command in way to do this all in one step.

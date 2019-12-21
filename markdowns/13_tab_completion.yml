@@ -1,5 +1,6 @@
 type: TerminalQuestion
 id: tab
+cid: mkdir 
 value: 5
 prompt: |
 

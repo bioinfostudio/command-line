@@ -1,5 +1,6 @@
 type: TerminalQuestion
-id: copydir 
+id: cpdir
+cid: mkdir
 value: 5
 prompt: |
 

@@ -1,5 +1,6 @@
 type: TerminalQuestion
 id: man
+cid: cd
 value: 5
 prompt: |
 

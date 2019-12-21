@@ -1,5 +1,6 @@
 type: TerminalQuestion
-id: columns
+id: column
+cid: pipes 
 value: 5
 prompt: |
 

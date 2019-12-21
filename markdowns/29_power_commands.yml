@@ -1,5 +1,6 @@
 type: TerminalQuestion
 id: power
+cid: terminal 
 value: 5
 prompt: |
 

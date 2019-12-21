@@ -1,5 +1,6 @@
 type: TerminalQuestion
-id: move
+id: mv
+cid: touch
 value: 5
 prompt: |
 
@@ -8,12 +9,12 @@ prompt: |
     Now, let's assume that we want to move these files to a new directory ('temp'). We will do this using the Unix [mv][] (move) command. Remember to use tab completion:
     
     ```bash
-    learner@:learning_unix$ mkdir temp
-    learner@:learning_unix$ mv heaven.txt temp/
-    learner@:learning_unix$ mv earth.txt temp/
-    learner@:learning_unix$ ls
+    learning_unix$ mkdir temp
+    learning_unix$ mv heaven.txt temp/
+    learning_unix$ mv earth.txt temp/
+    learning_unix$ ls
     temp
-    learner@:learning_unix$ ls temp/
+    learning_unix$ ls temp/
     earth.txt  heaven.txt
     ```
     

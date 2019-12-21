@@ -1,5 +1,6 @@
 type: TerminalQuestion
 id: mkdir
+cid: terminal
 value: 5
 prompt: |
 
@@ -8,8 +9,8 @@ prompt: |
     If we want to make a new directory (e.g. to store some work related data), we can use the [mkdir][] command:
     
     ```bash
-    learner@:~$ mkdir learning_unix
-    learner@:~$ ls
+    ~$ mkdir learning_unix
+    ~$ ls
     a_directory another_directory learning_unix
     ```
     
