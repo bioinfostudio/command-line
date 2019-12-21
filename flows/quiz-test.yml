@@ -7,7 +7,7 @@
 # separate files. This is optional, but conceivably useful.
 {% from "yaml-macros.yml" import indented_include %}
 
-title: "RELATE Test Quiz"
+title: "Command Line"
 
 # The "|" character introduces a 'block literal', which means all text indented below
 # it is taken literally. The description property holds text marked up with 'Markdown'.
@@ -16,7 +16,7 @@ title: "RELATE Test Quiz"
 # So the '#' character below introduces a first-level headline (not a comment).
 description: |
 
-    # RELATE Test Quiz
+    # Command Line 
 
 rules:
     start:
@@ -44,189 +44,75 @@ rules:
 
 groups:
 -
-    id: intro
-    pages:
-
-    -
-        type: Page
-        id: welcome
-        content: |
-
-            # Welcome to the test quiz for RELATE!
-
-            Don't be scared.
-
--
-    id: quiz_start
+    id: bootcamp 
     shuffle: False
     pages:
-
-    -
-        type: TerminalQuestion
-        id: shell
-        value: 5
-        prompt: |
-
-            # Welcome to the test terminal for SHELL!
-
-            Don't be scared.
-
-            # Welcome to the test terminal for SHELL!
-
-            Don't be scared.
-
-            # Welcome to the test terminal for SHELL!
-
-            Don't be scared.
-
-            # Welcome to the test terminal for SHELL!
-
-            Don't be scared.
-
-            # Welcome to the test terminal for SHELL!
-
-            Don't be scared.
-
-            # Welcome to the test terminal for SHELL!
-
-            Don't be scared.
-
-            # Welcome to the test terminal for SHELL!
-
-            Don't be scared.
-
-            # Welcome to the test terminal for SHELL!
-
-            Don't be scared.
-
-            # Welcome to the test terminal for SHELL!
-
-            Don't be scared.
-
-            # Welcome to the test terminal for SHELL!
-
-            Don't be scared.
-
-            # Welcome to the test terminal for SHELL!
-
-            Don't be scared.
-
-            # Welcome to the test terminal for SHELL!
-
-            Don't be scared.
-
-            # Welcome to the test terminal for SHELL!
-
-            Don't be scared.
-
-            # Welcome to the test terminal for SHELL!
-
-            Don't be scared.
-
-            # Welcome to the test terminal for SHELL!
-
-            Don't be scared.
-
-            # Welcome to the test terminal for SHELL!
-
-            Don't be scared.
-
-            # Welcome to the test terminal for SHELL!
-
-            Don't be scared.
 
     # Pages can be given in-line (like this one) or brought in by including
     # them from other files, as below.
     -
-        type: TextQuestion
-        id: half
-        value: 5
-        prompt: |
-
-          # A half
-
-          What's a half?
-
-        answers:
-
-          - type: float
-            value: 0.5
-            rtol: 1e-4
-          - <plain>half
-          - <plain>a half
-
+        {{ indented_include("markdowns/00_frontmatter.yml", 8) }}
     -
-        {{ indented_include("questions/krylov.yml", 8) }}
-
+        {{ indented_include("markdowns/01_first_command.yml", 8) }}
     -
-        type: MultipleChoiceQuestion
-        id: ice_cream_toppings
-        credit_mode: exact
-        value: 1
-        shuffle: False
-        prompt: |
-
-            # Ice Cream Toppings
-
-            Which of the following are ice cream toppings?
-
-        choices:
-
-          - ~CORRECT~ Sprinkles
-          - ~CORRECT~ Chocolate chunks
-          - Vacuum cleaner dust
-          - Spider webs
-          - ~CORRECT~ Almond bits
-
+        {{ indented_include("markdowns/02_the_tree.yml", 8) }}
     -
-        {{ indented_include("questions/matrix-properties.yml", 8) }}
-
+        {{ indented_include("markdowns/03_finding_yourself.yml", 8) }}
     -
-        {{ indented_include("questions/multi-question-example.yml", 8) }}
-
+        {{ indented_include("markdowns/04_making_directories.yml", 8) }}
     -
-        type: SurveyTextQuestion
-        id: fear
-        widget: textarea
-        prompt: |
-
-            # Psychology Survey
-
-            What's your biggest fear?
-
+        {{ indented_include("markdowns/05_moving_around.yml", 8) }}
     -
-        {{ indented_include("questions/survey-age-question.yml", 8) }}
-
--
-    id: quiz_tail
-    shuffle: True
-    pages:
-
+        {{ indented_include("markdowns/06_the_root_directory.yml", 8) }}
     -
-        {{ indented_include("questions/complex-text-match-example.yml", 8) }}
+        {{ indented_include("markdowns/07_going_up.yml", 8) }}
     -
-        {{ indented_include("questions/symbolic-expression-example.yml", 8) }}
+        {{ indented_include("markdowns/08_absolute_and_relative.yml", 8) }}
     -
-        {{ indented_include("questions/long-choice-least-squares.yml", 8) }}
+        {{ indented_include("markdowns/09_going_home.yml", 8) }}
     -
-        {{ indented_include("questions/autograded-python-example.yml", 8) }}
+        {{ indented_include("markdowns/10_advanced_ls.yml", 8) }}
     -
-        {{ indented_include("questions/auto-and-human-graded-python-example.yml", 8) }}
+        {{ indented_include("markdowns/11_man_pages.yml", 8) }}
     -
-        {{ indented_include("questions/pdf-file-upload-example.yml", 8) }}
+        {{ indented_include("markdowns/12_removing_directories.yml", 8) }}
     -
-        {{ indented_include("questions/any-file-upload-example.yml", 8) }}
+        {{ indented_include("markdowns/13_tab_completion.yml", 8) }}
     -
-        {{ indented_include("questions/human-graded-text-example.yml", 8) }}
+        {{ indented_include("markdowns/14_making_files.yml", 8) }}
     -
-        {{ indented_include("questions/audio-output-example.yml", 8) }}
+        {{ indented_include("markdowns/15_moving_files.yml", 8) }}
     -
-        {{ indented_include("questions/python-complex-validation-test-code.yml", 8) }}
+        {{ indented_include("markdowns/16_renaming_files.yml", 8) }}
     -
-        {{ indented_include("questions/non-ascii-choices.yml", 8) }}
+        {{ indented_include("markdowns/17_moving_directories.yml", 8) }}
+    -
+        {{ indented_include("markdowns/18_removing_files.yml", 8) }}
+    -
+        {{ indented_include("markdowns/19_copying_files.yml", 8) }}
+    -
+        {{ indented_include("markdowns/20_copying_directories.yml", 8) }}
+    -
+        {{ indented_include("markdowns/21_viewing_files_less.yml", 8) }}
+    -
+        {{ indented_include("markdowns/22_viewing_files_cat.yml", 8) }}
+    -
+        {{ indented_include("markdowns/23_counting_characters.yml", 8) }}
+    -
+        {{ indented_include("markdowns/24_editing_small_files.yml", 8) }}
+    -
+        {{ indented_include("markdowns/25_the_path.yml", 8) }}
+    -
+        {{ indented_include("markdowns/26_matching_lines.yml", 8) }}
+    -
+        {{ indented_include("markdowns/27_working_with_columns.yml", 8) }}
+    -
+        {{ indented_include("markdowns/28_combining_commands.yml", 8) }}
+    -
+        {{ indented_include("markdowns/29_power_commands.yml", 8) }}
 
 completion_text: |
 
-    # See you in class!
+    # See you !
 
     Thanks for completing the quiz.
