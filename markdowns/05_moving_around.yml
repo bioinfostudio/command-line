@@ -10,7 +10,7 @@ prompt: |
     
     ```bash
     cd learning_unix
-    ~/learning_unix$
+    learning_unix$
     ```
     
     Notice that on this system the command prompt has expanded to include our current directory. This doesn't happen by default on all Unix systems, and you can configure what information appears as part of the command prompt (though we won't cover that here).

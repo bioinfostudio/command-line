@@ -10,7 +10,6 @@ prompt: |
     
     ```bash
     man ls
-    man cd
     man man # yes even the man command has a manual page
     ```
     

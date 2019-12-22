@@ -1,7 +1,7 @@
 chunks:
 
 -
-    title: "Welcome to the sample course"
+    title: "Welcome to the command line course"
     id: welcome
     rules:
     -
@@ -16,37 +16,7 @@ chunks:
 
         # Command Line
 
-        Check out the [linear algebra recap](flow:001-linalg-recap). Do it now. Do it.
+        This **bootcamp** is intended to provide the reader with a basic overview of essential Unix/Linux commands that will allow them to navigate a file system and move, copy, edit files.
+        It will also introduce a brief overview of some **power** commands in Unix.
 
-        You can also go there using a
-        <a href="flow:001-linalg-recap" role="button" class="btn btn-default">Bootstrap button</a>.
-
-        You can also jump directly to the [sample quiz](flow:quiz-test).
-
-        Look at the amazing embedded [PDF](repocur:pdfs/sample.pdf).
-
-        In addition to interactive content, RELATE also supports [static (i.e.
-        non-interactive) pages](staticpage:test).
-
-        Remember, this image shows the model that RELATE is trying to put out
-        of business:
-
--
-    title: "Exam pointer"
-
-    id: exam_pointer
-    rules:
-    -
-        if_in_facility: test_center
-        if_after: 2015-06-01
-        weight: 200
-
-    -
-        shown: False
-        weight: 0
-
-    content: |
-
-        # Welcome to the computer-based testing facility!
-
-        <a href="flow:exam-1" class="btn btn-default">Start exam &raquo;</a>
+        ![creative commons](repo:images/cc.png) [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/) / by [Keith Bradnam](http://korflab.ucdavis.edu/bootcamp.html)
