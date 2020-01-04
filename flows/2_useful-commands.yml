@@ -1,7 +1,7 @@
-title: "Manupilation"
+title: "Useful"
 description: |
 
-    # Manupilation 
+    # Useful Commands 
 
 rules:
     start:
@@ -29,7 +29,7 @@ rules:
 
 groups:
 -
-    id: manipulation
+    id: useful
     shuffle: False
     pages:
     -
@@ -39,7 +39,7 @@ groups:
         value: 5
         prompt: |
 
-            ## Making the `ls` command more useful
+            ## Making the ls command more useful
  
             {% include "markdowns/10_advanced_ls.md" %}
     -

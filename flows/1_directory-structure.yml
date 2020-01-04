@@ -107,7 +107,7 @@ groups:
         value: 5
         prompt: |
 
-            ## Getting from 'A' to 'B'
+            ## Getting from A to B
 
             {% include "markdowns/05_moving_around.md" %}
     -
