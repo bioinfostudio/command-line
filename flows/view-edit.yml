@@ -1,0 +1,130 @@
+title: "Files"
+description: |
+
+    # Files 
+
+rules:
+    start:
+    -
+        if_before: end_week 1
+        if_has_role: [student, ta, instructor]
+        if_has_fewer_sessions_than: 4
+        may_start_new_session: True
+        may_list_existing_sessions: True
+
+    -
+        may_start_new_session: False
+        may_list_existing_sessions: True
+
+    access:
+    -
+        permissions: [view, submit_answer, end_session]
+
+    grade_identifier: cli3 
+    grade_aggregation_strategy: use_latest
+
+    grading:
+    -
+        credit_percent: 100
+
+groups:
+-
+    id: editing 
+    shuffle: False
+    pages:
+    -
+        type: TerminalQuestion
+        id: less
+        cid: mkdir
+        value: 5
+        prompt: |
+
+            ## Viewing files with less
+ 
+            {% include "markdowns/21_viewing_files_less.md" %}
+    -
+        type: TerminalQuestion
+        id: cat
+        cid: less
+        value: 5
+        prompt: |
+
+            ## Viewing files with cat
+ 
+            {% include "markdowns/22_viewing_files_cat.md" %}
+    -
+        type: TerminalQuestion
+        id: count
+        cid: cat
+        value: 5
+        prompt: |
+
+            ## Counting characters, words and lines in a file
+ 
+            {% include "markdowns/23_counting_characters.md" %}
+    -
+        type: TerminalQuestion
+        id: nano
+        cid: cat
+        value: 5
+        prompt: |
+
+            ## Editing small text files with nano
+ 
+            {% include "markdowns/24_editing_small_files.md" %}
+    -
+        type: TerminalQuestion
+        id: env
+        cid: cat
+        value: 5
+        prompt: |
+
+            ## The $PATH environment variable
+ 
+            {% include "markdowns/25_the_path.md" %}
+    -
+        type: TerminalQuestion
+        id: grep
+        cid: cat
+        value: 5
+        prompt: |
+
+            ## Matching lines in files with grep
+ 
+            {% include "markdowns/26_matching_lines.md" %}
+    -
+        type: TerminalQuestion
+        id: column
+        cid: pipes 
+        value: 5
+        prompt: |
+
+            ## Working with columns
+ 
+            {% include "markdowns/27_working_with_columns.md" %}
+    -
+        type: TerminalQuestion
+        id: pipes
+        cid: pipes 
+        value: 5
+        prompt: |
+
+            ## Combining Unix commands with pipes
+ 
+            {% include "markdowns/28_combining_commands.md" %}
+    -
+        type: TerminalQuestion
+        id: power
+        cid: terminal 
+        value: 5
+        prompt: |
+
+            ## Miscellaneous Unix power commands
+ 
+            {% include "markdowns/29_power_commands.md" %}
+
+completion_text: |
+
+    # See you !
+
+    Thanks for completing the quiz.

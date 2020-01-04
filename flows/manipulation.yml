@@ -1,0 +1,150 @@
+title: "Manupilation"
+description: |
+
+    # Manupilation 
+
+rules:
+    start:
+    -
+        if_before: end_week 1
+        if_has_role: [student, ta, instructor]
+        if_has_fewer_sessions_than: 4
+        may_start_new_session: True
+        may_list_existing_sessions: True
+
+    -
+        may_start_new_session: False
+        may_list_existing_sessions: True
+
+    access:
+    -
+        permissions: [view, submit_answer, end_session]
+
+    grade_identifier: cli2 
+    grade_aggregation_strategy: use_latest
+
+    grading:
+    -
+        credit_percent: 100
+
+groups:
+-
+    id: manipulation
+    shuffle: False
+    pages:
+    -
+        type: TerminalQuestion
+        id: lsoption
+        cid: learning
+        value: 5
+        prompt: |
+
+            ## Making the `ls` command more useful
+ 
+            {% include "markdowns/10_advanced_ls.md" %}
+    -
+        type: TerminalQuestion
+        id: man
+        cid: cd
+        value: 5
+        prompt: |
+
+            ## Man pages
+ 
+            {% include "markdowns/11_man_pages.md" %}
+    -
+        type: TerminalQuestion
+        id: rmdir
+        value: 5
+        cid: cd
+        prompt: |
+
+            ## Removing directories
+ 
+            {% include "markdowns/12_removing_directories.md" %}
+    -
+        type: TerminalQuestion
+        id: tab
+        cid: mkdir 
+        value: 5
+        prompt: |
+
+            ## Using tab completion
+ 
+            {% include "markdowns/13_tab_completion.md" %}
+    -
+        type: TerminalQuestion
+        id: touch
+        cid: mkdir 
+        value: 5
+        prompt: |
+
+            ## Creating empty files with the touch command
+ 
+            {% include "markdowns/14_making_files.md" %}
+    -
+        type: TerminalQuestion
+        id: mv
+        cid: touch
+        value: 5
+        prompt: |
+
+            ## Moving files
+ 
+            {% include "markdowns/15_moving_files.md" %}
+    -
+        type: TerminalQuestion
+        id: rename
+        cid: mv
+        value: 5
+        prompt: |
+
+            ## Renaming files
+ 
+            {% include "markdowns/16_renaming_files.md" %}
+    -
+        type: TerminalQuestion
+        id: mvdir
+        cid: rename
+        value: 5
+        prompt: |
+
+            ## Moving directories
+ 
+            {% include "markdowns/17_moving_directories.md" %}
+    -
+        type: TerminalQuestion
+        id: rm
+        cid: mvdir
+        value: 5
+        prompt: |
+
+            ## Removing files
+ 
+            {% include "markdowns/18_removing_files.md" %}
+    -
+        type: TerminalQuestion
+        id: cp
+        cid: mkdir
+        value: 5
+        prompt: |
+
+            ## Copying files
+ 
+            {% include "markdowns/19_copying_files.md" %}
+    -
+        type: TerminalQuestion
+        id: cpdir
+        cid: mkdir
+        value: 5
+        prompt: |
+
+            ## Copying directories
+ 
+            {% include "markdowns/20_copying_directories.md" %}
+
+completion_text: |
+
+    # See you !
+
+    Thanks for completing the quiz.
