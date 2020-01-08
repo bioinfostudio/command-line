@@ -7,7 +7,7 @@
 # separate files. This is optional, but conceivably useful.
 # {% from "yaml-macros.yml" import indented_include %}
 
-title: "Directories"
+title: "Navigate a file system"
 
 # The "|" character introduces a 'block literal', which means all text indented below
 # it is taken literally. The description property holds text marked up with 'Markdown'.
@@ -16,7 +16,7 @@ title: "Directories"
 # So the '#' character below introduces a first-level headline (not a comment).
 description: |
 
-    # Directories 
+    # Navigate a file system
 
 rules:
     start:

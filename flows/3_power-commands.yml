@@ -1,7 +1,7 @@
-title: "File Manipulation"
+title: "Power commands"
 description: |
 
-    # File Manupilation
+    # Power commands 
 
 rules:
     start:
@@ -29,49 +29,9 @@ rules:
 
 groups:
 -
-    id: files 
+    id: powers
     shuffle: False
     pages:
-    -
-        type: TerminalQuestion
-        id: less
-        cid: mkdir
-        value: 5
-        prompt: |
-
-            ## Viewing files with less
- 
-            {% include "markdowns/21_viewing_files_less.md" %}
-    -
-        type: TerminalQuestion
-        id: cat
-        cid: less
-        value: 5
-        prompt: |
-
-            ## Viewing files with cat
- 
-            {% include "markdowns/22_viewing_files_cat.md" %}
-    -
-        type: TerminalQuestion
-        id: count
-        cid: cat
-        value: 5
-        prompt: |
-
-            ## Counting characters, words and lines in a file
- 
-            {% include "markdowns/23_counting_characters.md" %}
-    -
-        type: TerminalQuestion
-        id: nano
-        cid: cat
-        value: 5
-        prompt: |
-
-            ## Editing small text files with nano
- 
-            {% include "markdowns/24_editing_small_files.md" %}
     -
         type: TerminalQuestion
         id: env
