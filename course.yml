@@ -19,4 +19,4 @@ chunks:
         This **bootcamp** is intended to provide the reader with a basic overview of essential Unix/Linux commands that will allow them to navigate a file system and move, copy, edit files.
         It will also introduce a brief overview of some **power** commands in Unix.
 
-        [![creative commons](repo:images/cc.png)](https://creativecommons.org/licenses/by/4.0/) / by [Keith Bradnam](http://korflab.ucdavis.edu/bootcamp.html)
+        <i class="fab fa-creative-commons"></i> / by [Keith Bradnam](http://korflab.ucdavis.edu/bootcamp.html)
