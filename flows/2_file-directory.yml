@@ -6,7 +6,6 @@ description: |
 rules:
     start:
     -
-        if_before: end_week 1
         if_has_role: [unenrolled, student, ta, instructor]
         if_has_fewer_sessions_than: 4
         may_start_new_session: True
