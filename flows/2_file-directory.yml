@@ -35,155 +35,120 @@ groups:
         type: TerminalQuestion
         id: lsoption
         cid: learning
-        
+        title: Making the ls command more useful
         prompt: |
 
-            ## Making the ls command more useful
- 
             {% include "markdowns/10_advanced_ls.md" %}
     -
         type: TerminalQuestion
         id: man
         cid: cd
-        
+        title: Man pages
         prompt: |
 
-            ## Man pages
- 
             {% include "markdowns/11_man_pages.md" %}
     -
         type: TerminalQuestion
         id: rmdir
-        
+        title: Removing directories
         cid: cd
         prompt: |
 
-            ## Removing directories
- 
             {% include "markdowns/12_removing_directories.md" %}
     -
         type: TerminalQuestion
         id: tab
         cid: mkdir 
-        
+        title: Using tab completion
         prompt: |
 
-            ## Using tab completion
- 
             {% include "markdowns/13_tab_completion.md" %}
     -
         type: TerminalQuestion
         id: touch
         cid: mkdir 
-        
+        title: Creating empty files with the touch command
         prompt: |
 
-            ## Creating empty files with the touch command
- 
             {% include "markdowns/14_making_files.md" %}
     -
         type: TerminalQuestion
         id: mv
         cid: touch
-        
+        title: Moving files
         prompt: |
 
-            ## Moving files
- 
             {% include "markdowns/15_moving_files.md" %}
     -
         type: TerminalQuestion
         id: rename
         cid: mv
-        
+        title: Renaming files
         prompt: |
 
-            ## Renaming files
- 
             {% include "markdowns/16_renaming_files.md" %}
     -
         type: TerminalQuestion
         id: mvdir
         cid: rename
-        
+        title: Moving directories
         prompt: |
 
-            ## Moving directories
- 
             {% include "markdowns/17_moving_directories.md" %}
     -
         type: TerminalQuestion
         id: rm
         cid: mvdir
-        
+        title: Removing files
         prompt: |
 
-            ## Removing files
- 
             {% include "markdowns/18_removing_files.md" %}
     -
         type: TerminalQuestion
         id: cp
         cid: mkdir
-        
+        title: Copying files
         prompt: |
 
-            ## Copying files
- 
             {% include "markdowns/19_copying_files.md" %}
     -
         type: TerminalQuestion
         id: cpdir
         cid: mkdir
-        
+        title: Copying directories
         prompt: |
 
-            ## Copying directories
- 
             {% include "markdowns/20_copying_directories.md" %}
     -
         type: TerminalQuestion
         id: less
         cid: mkdir
-        
+        title: Viewing files with less
         prompt: |
 
-            ## Viewing files with less
- 
             {% include "markdowns/21_viewing_files_less.md" %}
     -
         type: TerminalQuestion
         id: cat
         cid: less
-        
+        title: Viewing files with cat
         prompt: |
 
-            ## Viewing files with cat
- 
             {% include "markdowns/22_viewing_files_cat.md" %}
     -
         type: TerminalQuestion
         id: count
         cid: cat
-        
+        title: Counting characters, words and lines in a file
         prompt: |
 
-            ## Counting characters, words and lines in a file
- 
             {% include "markdowns/23_counting_characters.md" %}
     -
         type: TerminalQuestion
         id: nano
         cid: cat
-        
+        title: Editing small text files with nano
         prompt: |
 
-            ## Editing small text files with nano
- 
             {% include "markdowns/24_editing_small_files.md" %}
  
-completion_text: |
-
-    # See you !
-
-    Thanks for completing the quiz.

@@ -35,55 +35,39 @@ groups:
         type: TerminalQuestion
         id: env
         cid: cat
-        
+        title: The $PATH environment variable
         prompt: |
 
-            ## The $PATH environment variable
- 
             {% include "markdowns/25_the_path.md" %}
     -
         type: TerminalQuestion
         id: grep
         cid: cat
-        
+        title: Matching lines in files with grep
         prompt: |
 
-            ## Matching lines in files with grep
- 
             {% include "markdowns/26_matching_lines.md" %}
     -
         type: TerminalQuestion
         id: column
         cid: pipes 
-        
+        title: Working with columns
         prompt: |
 
-            ## Working with columns
- 
             {% include "markdowns/27_working_with_columns.md" %}
     -
         type: TerminalQuestion
         id: pipes
         cid: pipes 
-        
+        title: Combining Unix commands with pipes
         prompt: |
 
-            ## Combining Unix commands with pipes
- 
             {% include "markdowns/28_combining_commands.md" %}
     -
         type: TerminalQuestion
         id: power
         cid: terminal 
-        
+        title: Miscellaneous Unix power commands
         prompt: |
 
-            ## Miscellaneous Unix power commands
- 
             {% include "markdowns/29_power_commands.md" %}
-
-completion_text: |
-
-    # See you !
-
-    Thanks for completing the quiz.

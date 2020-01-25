@@ -53,105 +53,79 @@ groups:
         type: TerminalQuestion
         id: intro 
         cid: terminal
-        
+        title: Why Unix?
         prompt: |
-
-            ## Why Unix?
 
             {% include "markdowns/00_frontmatter.md" %}
     -
         type: TerminalQuestion
         id: ls
         cid: terminal
-        
+        title: Your first Unix command
         prompt: |
-
-            ## Your first Unix command
 
             {% include "markdowns/01_first_command.md" %}
     -
         type: TerminalQuestion
         id: tree
         cid: terminal
-        
+        title: The Unix tree
         prompt: |
 
-            ## The Unix tree
- 
             {% include "markdowns/02_the_tree.md" %}
     -
         type: TerminalQuestion
         id: pwd
         cid: terminal
-        
+        title: Finding out where you are
         prompt: |
 
-            ## Finding out where you are
- 
             {% include "markdowns/03_finding_yourself.md" %}
     -
         type: TerminalQuestion
         id: mkdir
         cid: terminal
-        
+        title: Making new directories
         prompt: |
 
-            ## Making new directories
- 
             {% include "markdowns/04_making_directories.md" %}
     -
         type: TerminalQuestion
         id: cd
         cid: mkdir
-        
+        title: Getting from A to B
         prompt: |
-
-            ## Getting from A to B
 
             {% include "markdowns/05_moving_around.md" %}
     -
         type: TerminalQuestion
         id: root
         cid: inner 
-        
+        title: The root directory
         prompt: |
 
-            ## The root directory
- 
             {% include "markdowns/06_the_root_directory.md" %}
     -
         type: TerminalQuestion
         id: upwards
         cid: cd
-        
+        title: Navigating upwards in the Unix filesystem
         prompt: |
 
-            ## Navigating upwards in the Unix filesystem
- 
             {% include "markdowns/07_going_up.md" %}
     -
         type: TerminalQuestion
         id: paths
         cid: learning
-        
+        title: Absolute and relative paths
         prompt: |
 
-            ## Absolute and relative paths
- 
             {% include "markdowns/08_absolute_and_relative.md" %}
     -
         type: TerminalQuestion
         id: home
         cid: cd
-        
+        title: Finding your way back home
         prompt: |
 
-            ## Finding your way back home
- 
             {% include "markdowns/09_going_home.md" %}
-
-completion_text: |
-
-    # See you !
-
-    Thanks for completing the quiz.
