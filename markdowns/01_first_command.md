@@ -18,8 +18,6 @@ The `ls` command is used to list the contents of _any_ directory, not necessaril
 ~$ ls /
 bin   dev  home  lib32  libx32  mnt  proc  run   srv  tmp  var
 boot  etc  lib   lib64  media   opt  root  sbin  sys  usr
-~$ ls /etc/perl
-CPAN  Net
 ```
 
 [ls]: http://en.wikipedia.org/wiki/Ls
