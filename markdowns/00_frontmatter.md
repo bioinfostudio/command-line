@@ -1,3 +1,5 @@
+## Why Unix?
+
 The [Unix operating system][Unix] has been around since 1969. Back then there was no such thing as a graphical user interface. You typed everything. It may seem archaic to use a keyboard to issue commands today, but it's much easier to automate keyboard tasks than mouse tasks. There are several variants of Unix (including [Linux][Linux]), though the differences do not matter much for most basic functions.
 
 [Unix]: http://en.wikipedia.org/wiki/Unix

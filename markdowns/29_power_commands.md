@@ -1,3 +1,5 @@
+## Miscellaneous Unix power commands
+
 The following examples introduce some other Unix commands, and show how they could be used to work on a fictional file called `file.txt`. Remember, you can always learn more about these Unix commands from their respective man pages with the `man` command. These are not all real world cases, but rather show the diversity of Unix command-line tools:
 
 + View the penultimate 10 lines of a file (using [head][] and [tail][] commands):

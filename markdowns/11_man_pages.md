@@ -1,3 +1,5 @@
+## Man pages
+
 If every Unix command has so many options, you might be wondering how you find out what they are and what they do. Well, thankfully every Unix command has an associated 'manual' that you can access by using the `man` command. E.g.
 
 ```bash

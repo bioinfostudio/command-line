@@ -1,3 +1,5 @@
+## Making new directories
+
 If we want to make a new directory (e.g. to store some work related data), we can use the [mkdir][] command:
 
 ```bash

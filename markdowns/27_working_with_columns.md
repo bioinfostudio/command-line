@@ -1,3 +1,5 @@
+## Working with columns
+
 Along your "command line adventures", you will encounter many files that are divided in columns, such as "csv" or "tsv" files.
 
 Fortunately, unix has many tools to handle and manipulate this type of files.

@@ -1,3 +1,5 @@
+## Counting characters, words and lines in a file
+
 ```bash
 learning_unix$ ls
 opening_lines.txt

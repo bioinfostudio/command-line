@@ -1,3 +1,5 @@
+## Copying files
+
 Copying files with the [cp][] (copy) command is very similar to moving them. Remember to always specify a source and a target location. Let's create a new file and make a copy of it:
 
 ```bash

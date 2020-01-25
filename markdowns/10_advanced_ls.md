@@ -1,3 +1,5 @@
+## Making the ls command more useful
+
 The `..` operator that we saw earlier can also be used with the `ls` command, e.g. you can list directories that are 'above' you:
 
 ```bash
