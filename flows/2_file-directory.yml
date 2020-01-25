@@ -35,7 +35,7 @@ groups:
         type: TerminalQuestion
         id: lsoption
         cid: learning
-        value: 5
+        
         prompt: |
 
             ## Making the ls command more useful
@@ -45,7 +45,7 @@ groups:
         type: TerminalQuestion
         id: man
         cid: cd
-        value: 5
+        
         prompt: |
 
             ## Man pages
@@ -54,7 +54,7 @@ groups:
     -
         type: TerminalQuestion
         id: rmdir
-        value: 5
+        
         cid: cd
         prompt: |
 
@@ -65,7 +65,7 @@ groups:
         type: TerminalQuestion
         id: tab
         cid: mkdir 
-        value: 5
+        
         prompt: |
 
             ## Using tab completion
@@ -75,7 +75,7 @@ groups:
         type: TerminalQuestion
         id: touch
         cid: mkdir 
-        value: 5
+        
         prompt: |
 
             ## Creating empty files with the touch command
@@ -85,7 +85,7 @@ groups:
         type: TerminalQuestion
         id: mv
         cid: touch
-        value: 5
+        
         prompt: |
 
             ## Moving files
@@ -95,7 +95,7 @@ groups:
         type: TerminalQuestion
         id: rename
         cid: mv
-        value: 5
+        
         prompt: |
 
             ## Renaming files
@@ -105,7 +105,7 @@ groups:
         type: TerminalQuestion
         id: mvdir
         cid: rename
-        value: 5
+        
         prompt: |
 
             ## Moving directories
@@ -115,7 +115,7 @@ groups:
         type: TerminalQuestion
         id: rm
         cid: mvdir
-        value: 5
+        
         prompt: |
 
             ## Removing files
@@ -125,7 +125,7 @@ groups:
         type: TerminalQuestion
         id: cp
         cid: mkdir
-        value: 5
+        
         prompt: |
 
             ## Copying files
@@ -135,7 +135,7 @@ groups:
         type: TerminalQuestion
         id: cpdir
         cid: mkdir
-        value: 5
+        
         prompt: |
 
             ## Copying directories
@@ -145,7 +145,7 @@ groups:
         type: TerminalQuestion
         id: less
         cid: mkdir
-        value: 5
+        
         prompt: |
 
             ## Viewing files with less
@@ -155,7 +155,7 @@ groups:
         type: TerminalQuestion
         id: cat
         cid: less
-        value: 5
+        
         prompt: |
 
             ## Viewing files with cat
@@ -165,7 +165,7 @@ groups:
         type: TerminalQuestion
         id: count
         cid: cat
-        value: 5
+        
         prompt: |
 
             ## Counting characters, words and lines in a file
@@ -175,7 +175,7 @@ groups:
         type: TerminalQuestion
         id: nano
         cid: cat
-        value: 5
+        
         prompt: |
 
             ## Editing small text files with nano

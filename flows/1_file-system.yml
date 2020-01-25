@@ -53,7 +53,7 @@ groups:
         type: TerminalQuestion
         id: intro 
         cid: terminal
-        value: 5
+        
         prompt: |
 
             ## Why Unix?
@@ -63,7 +63,7 @@ groups:
         type: TerminalQuestion
         id: ls
         cid: terminal
-        value: 5
+        
         prompt: |
 
             ## Your first Unix command
@@ -73,7 +73,7 @@ groups:
         type: TerminalQuestion
         id: tree
         cid: terminal
-        value: 5
+        
         prompt: |
 
             ## The Unix tree
@@ -83,7 +83,7 @@ groups:
         type: TerminalQuestion
         id: pwd
         cid: terminal
-        value: 5
+        
         prompt: |
 
             ## Finding out where you are
@@ -93,7 +93,7 @@ groups:
         type: TerminalQuestion
         id: mkdir
         cid: terminal
-        value: 5
+        
         prompt: |
 
             ## Making new directories
@@ -103,7 +103,7 @@ groups:
         type: TerminalQuestion
         id: cd
         cid: mkdir
-        value: 5
+        
         prompt: |
 
             ## Getting from A to B
@@ -113,7 +113,7 @@ groups:
         type: TerminalQuestion
         id: root
         cid: inner 
-        value: 5
+        
         prompt: |
 
             ## The root directory
@@ -123,7 +123,7 @@ groups:
         type: TerminalQuestion
         id: upwards
         cid: cd
-        value: 5
+        
         prompt: |
 
             ## Navigating upwards in the Unix filesystem
@@ -133,7 +133,7 @@ groups:
         type: TerminalQuestion
         id: paths
         cid: learning
-        value: 5
+        
         prompt: |
 
             ## Absolute and relative paths
@@ -143,7 +143,7 @@ groups:
         type: TerminalQuestion
         id: home
         cid: cd
-        value: 5
+        
         prompt: |
 
             ## Finding your way back home

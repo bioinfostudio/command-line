@@ -35,7 +35,7 @@ groups:
         type: TerminalQuestion
         id: env
         cid: cat
-        value: 5
+        
         prompt: |
 
             ## The $PATH environment variable
@@ -45,7 +45,7 @@ groups:
         type: TerminalQuestion
         id: grep
         cid: cat
-        value: 5
+        
         prompt: |
 
             ## Matching lines in files with grep
@@ -55,7 +55,7 @@ groups:
         type: TerminalQuestion
         id: column
         cid: pipes 
-        value: 5
+        
         prompt: |
 
             ## Working with columns
@@ -65,7 +65,7 @@ groups:
         type: TerminalQuestion
         id: pipes
         cid: pipes 
-        value: 5
+        
         prompt: |
 
             ## Combining Unix commands with pipes
@@ -75,7 +75,7 @@ groups:
         type: TerminalQuestion
         id: power
         cid: terminal 
-        value: 5
+        
         prompt: |
 
             ## Miscellaneous Unix power commands
