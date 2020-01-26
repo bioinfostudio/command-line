@@ -7,9 +7,8 @@ Fortunately, unix has many tools to handle and manipulate this type of files.
 First let's download ourselves a test file and look at it's contents:
 
 ```bash
-cd
-curl https://raw.githubusercontent.com/Blahah/command_line_bootcamp/master/testfiles/grades.txt > grades.txt
-less testfile.vcf
+learning_unix$ cd
+$ curl -k https://raw.githubusercontent.com/Blahah/command_line_bootcamp/master/testfiles/grades.txt > grades.txt
 ```
 
 `curl` will download the contents of any URL you provide it and print it to STDOUT. Since we want our test file on the filesystem, we redirect the output of `curl` to the file "grades.txt"
@@ -17,7 +16,7 @@ less testfile.vcf
 As you can see, this file containing hypothetical grades for hypothetical characters. First of all, one character stands out - "Spock", as he aces every class. Let's extract his information:
 
 ```bash
-cut -f 5 grades.txt
+$ cut -f 5 grades.txt
 ```
 
 This command provides us with all the rows for column "5" (-f 5), which contains the grades for "Spock" and prints it to STDOUT. Neat, hum?

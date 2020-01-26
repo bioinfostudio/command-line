@@ -33,7 +33,9 @@ It was love at first sight.
 It was the day my grandmother exploded.
 When he was nearly thirteen, my brother Jem got his arm badly broken at the elbow.
 Marley was dead, to begin with.
+```
 
+```bash
 learning_unix$ grep -v was opening_lines.txt
 Call me Ishmael.
 The primroses were over.
@@ -41,14 +43,20 @@ Now is the winter of our discontent.
 All children, except one, grow up.
 In a hole in the ground there lived a hobbit.
 I am an invisible man.
+```
 
+```bash
 learning_unix$ grep all opening_lines.txt
 Call me Ishmael.
+```
 
+```bash
 learning_unix$ grep -i all opening_lines.txt
 Call me Ishmael.
 All children, except one, grow up.
+```
 
+```bash
 learning_unix$ grep in opening_lines.txt
 Now is the winter of our discontent.
 The Galactic Empire was dying.
@@ -56,22 +64,30 @@ In a hole in the ground there lived a hobbit.
 It was a bright, cold day in April, and the clocks were striking thirteen.
 I am an invisible man.
 Marley was dead, to begin with.
+```
 
+```bash
 learning_unix$ grep -w in opening_lines.txt
 In a hole in the ground there lived a hobbit.
 It was a bright, cold day in April, and the clocks were striking thirteen.
+```
 
+```bash
 learning_unix$ grep -w o.. opening_lines.txt
 Now is the winter of our discontent.
 All children, except one, grow up.
+```
 
+```bash
 learning_unix$ grep [aeiou]t opening_lines.txt
 In a hole in the ground there lived a hobbit.
 It was love at first sight.
 It was the day my grandmother exploded.
 When he was nearly thirteen, my brother Jem got his arm badly broken at the elbow.
 Marley was dead, to begin with.
+```
 
+```bash
 learning_unix$ grep -w -i [aeiou]t opening_lines.txt
 It was a pleasure to burn.
 It was a bright, cold day in April, and the clocks were striking thirteen.
@@ -81,4 +97,3 @@ When he was nearly thirteen, my brother Jem got his arm badly broken at the elbo
 ```
 
 [grep]: http://en.wikipedia.org/wiki/Grep
-    

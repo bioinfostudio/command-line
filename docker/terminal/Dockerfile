@@ -26,7 +26,7 @@ RUN chown -R bioinfo:bioinfo /home/bioinfo
 RUN echo 'export PS1=" \W\$ "' >> /home/bioinfo/.bashrc
 # become the bioinfo
 USER bioinfo
-
+ENV USER bioinfo
 ENV HOME /home/bioinfo
 WORKDIR /home/bioinfo
 
