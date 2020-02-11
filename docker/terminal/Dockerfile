@@ -1,5 +1,5 @@
-FROM inducer/debian-amd64-minbase
-
+#FROM inducer/debian-amd64-minbase
+FROM ubuntu:16.04
 RUN apt-get update --fix-missing
 RUN apt-get -y -o APT::Install-Recommends=0 -o APT::Install-Suggests=0 install \
     curl \
@@ -23,7 +23,7 @@ RUN useradd -ms /bin/bash bioinfo
 #RUN cd && cp -R .bashrc .profile /home/bioinfo
 # setup the user directory
 RUN chown -R bioinfo:bioinfo /home/bioinfo
-RUN echo 'export PS1=" \W\$ "' >> /home/bioinfo/.bashrc
+RUN echo 'export PS1=" \W \$ "' >> /home/bioinfo/.bashrc
 # become the bioinfo
 USER bioinfo
 ENV USER bioinfo
