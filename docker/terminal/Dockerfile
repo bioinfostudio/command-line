@@ -17,7 +17,7 @@ RUN apt-get clean
 #ADD runterm /opt/terminal/
 
 # create a non-root user
-RUN useradd -ms /bin/bash bioinfo 
+RUN useradd -ms /bin/bash bioinfo
 
 # copy the nice dotfiles that dockerfile/ubuntu gives us:
 #RUN cd && cp -R .bashrc .profile /home/bioinfo

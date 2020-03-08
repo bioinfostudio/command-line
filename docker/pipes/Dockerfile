@@ -1,4 +1,4 @@
-FROM asia.gcr.io/wise-cycling-267806/terminal
+FROM gcr.io/wise-cycling-267806/terminal
 
 RUN mkdir learning_unix
 COPY opening_lines.txt learning_unix
